@@ -28,4 +28,5 @@ url_sok = webdriver.generate_url(search_term=search_input, site='Sok')
 shops_selenium.sok_search(url=url_sok, driver=driver , filename=filename, search_term=search_input)
 print(f'Uploaded data from Sok to {filename}')
 
+print('Some changes')
 driver.quit()
