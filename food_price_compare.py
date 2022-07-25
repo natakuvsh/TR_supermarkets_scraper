@@ -1,4 +1,4 @@
-from utils import webdriver,file
+from utils import webdriver, file
 import shops_selenium
 import shops_bs4
 
@@ -8,6 +8,9 @@ filename = file.generate_filename(search_term=search_input.lower())
 file.save_data_to_csv(None, filename=filename, new_file=True)
 print(f'File {filename} is created')
 
+'''
+Creating urls for search and uploading data to the file
+'''
 
 url_a101 = webdriver.generate_url(search_term=search_input, site='A101')
 shops_bs4.a101_search(url=url_a101, filename=filename, search_term=search_input)
@@ -17,6 +20,9 @@ url_carrefour = webdriver.generate_url(search_term=search_input, site='Carrefour
 shops_bs4.carrefour_search(url=url_carrefour, filename=filename, search_term=search_input)
 print(f'Uploaded data from Carrefour to {filename}')
 
+'''
+Starting the driver to use selenium. Creating urls for search and uploading data to the file
+'''
 
 driver = webdriver.start_driver()
 
@@ -28,5 +34,5 @@ url_sok = webdriver.generate_url(search_term=search_input, site='Sok')
 shops_selenium.sok_search(url=url_sok, driver=driver , filename=filename, search_term=search_input)
 print(f'Uploaded data from Sok to {filename}')
 
-print('Some changes')
+print(f'{filename} is saved successfully.')
 driver.quit()

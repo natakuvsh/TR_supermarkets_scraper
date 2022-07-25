@@ -4,7 +4,7 @@ from datetime import datetime
 
 def generate_filename(search_term):
     timestamp = datetime.now().strftime("%d%m%Y")
-    stem = path = '_'.join(search_term.split(' '))
+    stem = '_'.join(search_term.split(' '))
     filename = stem + '_' + timestamp + '.csv'
     return filename
 

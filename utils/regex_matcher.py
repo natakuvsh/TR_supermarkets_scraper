@@ -1,6 +1,4 @@
-import base64
 import re
-import urllib.request
 import unidecode
 
 
@@ -13,6 +11,7 @@ def regex_match(product, price, site, search_term):
             weight = matcher.group(3)
             unit = matcher.group(5)
             """
+            Image finder, needs to be updated
             try:
                 urllib.request.urlretrieve(image_url, f"images/{name}.jpg")
                 with open(f"images/{name}.jpg", "rb") as image_file:
