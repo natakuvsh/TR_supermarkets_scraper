@@ -1,6 +1,6 @@
 # Supermarket scraper 
 
-Console-app which uses Selenium and BeautifulSoap libraries to scrape data from supermarkets and creates a file with product name, price, weight and price for kg.
+Console-app which uses Selenium and BeautifulSoap libraries to scrape data from turkish supermarkets and creates a file with product name, price, weight and price for kg.
 
 In order to run this script you need to have some dependencies installed::
 ```
