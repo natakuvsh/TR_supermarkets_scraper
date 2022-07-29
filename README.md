@@ -4,7 +4,7 @@ Console-app which uses Selenium and BeautifulSoap libraries to scrape data from 
 
 In order to run this script you need to have some dependencies installed::
 ```
-pip install requirements.text
+pip install requirements.txt
 ```
 To run the script:
 ```
